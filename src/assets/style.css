@@ -1,0 +1,281 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: black;
+    overflow-x: hidden;
+}
+
+/* nav style start */
+.nav-holder {
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(120, 230, 120);;
+    margin-bottom: 20px;
+    align-items: center;
+
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: .8em;
+    font-weight: 600;
+    display: block;
+}
+
+.nav-link:hover {
+    background-color: black;
+    padding: 5px 10px;
+    color: rgb(62, 160, 62);
+
+}
+
+/* nav style end */
+
+/* home-page start */
+.home-page {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.home-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-intro {
+    width: 48%;
+    margin-left: auto;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    transition: all .6s;
+}
+
+.home-hero {
+    width: 48%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+}
+
+.home-hero img {
+    width: 80%;
+}
+
+
+
+.home-intro p {
+    margin: 10px auto;
+
+}
+
+.get-started-link {
+    text-decoration: none;
+    display: block;
+    background-color: rgb(62, 160, 62);
+    ;
+    width: max-content;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: .8em;
+}
+
+.get-started-link:hover {
+    transform: scale(1.03);
+}
+
+@media (max-width:700px) {
+    .home-main {
+        flex-direction: column;
+
+    }
+
+    .home-intro,
+    .home-hero {
+        width: 95%;
+        margin: 10px auto;
+
+    }
+}
+
+/* home-page end */
+
+/* calc page start */
+
+.calc-page {
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* about form start */
+.calc-form,
+.computation-info-holder {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    width: 95vw;
+}
+
+.each-input-holder {
+    background-color: #EFEFEF;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    height: 90px;
+    justify-content: space-around;
+    border-radius: 5px;
+}
+
+.each-input-holder select,
+.each-input-holder input {
+    height: 50%;
+    margin: 0 10px;
+    padding-left: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.each-input-holder label {
+    margin: 0 10px;
+    font-size: .8em;
+
+}
+
+.each-input-holder label span {
+    color: red;
+
+}
+
+.form-head {
+    text-align: center;
+    margin: 10px auto;
+}
+
+/* calc header start
+.computation-info-holder{
+    display: flex;
+    flex-direction: column;
+    margin:10px auto;
+    width:100%;
+    background-color: red;
+} */
+.each-computation-info {
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    background-color: #EFEFEF;
+    margin: 5px auto;
+    align-items: center;
+    padding: 0 5px;
+    text-transform: capitalize;
+    font-size: .8em;
+    width: 95%
+}
+
+.form-header p {
+    font-size: .7em;
+    color: red;
+    width: 95%;
+    font-weight: bold;
+    text-align: center;
+}
+
+.form-header h3 {
+    text-align: center;
+}
+
+aside {
+    width: 95vw;
+    margin: 5px auto;
+}
+
+.compute-show-btn {
+    margin: 10px auto;
+    padding: 5px 10px;
+    background-color: rgb(62, 160, 62);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.compute-show-btn:hover {
+    background-color: rgb(120, 230, 120);
+    transform: scale(1.05);
+}
+
+.calc-btn {
+    width: 80px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 auto;
+    cursor: pointer;
+    background-color: rgb(62, 160, 62);
+}
+
+.calc-btn:hover {
+    background-color: rgb(120, 230, 120);
+    transform: scale(1.05);
+}
+
+/* calc header end */
+
+/* result display start */
+.result-info-overlay {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.521);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.result-info {
+    width: 80%;
+    height: 80%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center;
+    background-color: rgb(120, 230, 120);
+}
+
+/* result display end */
+.input-info,
+.output-info {
+    width: 90%;
+    margin: 5% 0
+}
+
+.input-info h2,
+.output-info h2 {
+    margin: 10px 0;
+    text-decoration: underline;
+}
+
+select, input {
+    background-color: rgb(120, 230, 120);
+}
+
+.input-info h4,
+.output-info h4 {
+    margin: 10px 0;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: .8em;
+}
